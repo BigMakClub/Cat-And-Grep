@@ -1,0 +1,15 @@
+#ifndef GREP_PRINT_H
+#define GREP_PRINT_H
+
+#include 
+#define _GNU_SOURCE  // для включения getline
+#include <stdio.h>
+#include <stdlib.h>  // для включения getline
+
+void grep(FILE *new_f, char *sample, flags all_flag, int argc, char *argv);
+void print_name_file(int argc, char *argv, flags all_flag);
+void add_line_break(char *line);
+int flag_o(flags all_flag, int argc, char *argv, int *printed, int *printed_no,
+           int start, int end, char *line, int number);
+
+#endif

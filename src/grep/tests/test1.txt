@@ -1,0 +1,11 @@
+#include
+#include <string.h>
+void add_line_break(char *line) {
+  if (strstr(line, "\n") == 0) {
+    putchar('\n');
+  }
+}
+void print_name_file(int argc, char *argv, flags all_flag) {
+  if (!all_flag.h)
+    if ((argc - optind > 2)) printf("%s:", argv);
+}
